@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-aves
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0038-tenant/ci10t-777-0038-app/devfile-sample-aves@sha256:7469fbcd2f23abf7aad83b53ba95a10fcb11d59e4d3133496eaa553240412807
+        name: my-nodejs
+        resources: {}
+status: {}
